@@ -217,11 +217,11 @@ body {
   #alert button {
     width: 15px;
     height: 15px;
-    background-image: url(/img/notactive/close.png);
+    background-image: url(../img/notactive/close.png);
     background-repeat: no-repeat;
     background-position: center; }
     #alert button:focus {
-      background-image: url(/img/active/close.png);
+      background-image: url(../img/active/close.png);
       background-repeat: no-repeat;
       background-position: center; }
 
@@ -247,19 +247,19 @@ body {
       justify-content: center;
       align-content: center; }
     #header #left #burger {
-      background-image: url("/img/notactive/burger.png");
+      background-image: url("../img/notactive/burger.png");
       background-repeat: no-repeat;
       background-position: center; }
       #header #left #burger:hover, #header #left #burger:focus {
-        background-image: url("/img/active/burger.png");
+        background-image: url("../img/active/burger.png");
         background-repeat: no-repeat;
         background-position: center; }
     #header #left #attention {
-      background-image: url("/img/notactive/attention.png");
+      background-image: url("../img/notactive/attention.png");
       background-repeat: no-repeat;
       background-position: center; }
       #header #left #attention:hover, #header #left #attention:focus {
-        background-image: url("/img/active/attention.png");
+        background-image: url("../img/active/attention.png");
         background-repeat: no-repeat;
         background-position: center; }
     #header #left #attention p {
@@ -285,13 +285,13 @@ body {
           width: 30px;
           height: 30px;
           border-right: 1px solid #151523;
-          background-image: url("/img/notactive/pen.png");
+          background-image: url("../img/notactive/pen.png");
           background-repeat: no-repeat;
           background-position: center; }
         #header #left #create a:hover, #header #left #create a:focus {
           color: #ffffff; }
           #header #left #create a:hover div, #header #left #create a:focus div {
-            background-image: url("/img/active/pen.png");
+            background-image: url("../img/active/pen.png");
             background-repeat: no-repeat;
             background-position: center; }
     #header #left #online {
@@ -343,11 +343,11 @@ body {
         #header #right #search div button {
           width: 30px;
           height: 30px;
-          background-image: url("/img/notactive/search.png");
+          background-image: url("../img/notactive/search.png");
           background-repeat: no-repeat;
           background-position: center; }
           #header #right #search div button:focus {
-            background-image: url("/img/active/search.png");
+            background-image: url("../img/active/search.png");
             background-repeat: no-repeat;
             background-position: center; }
     #header #right #user {
@@ -407,33 +407,33 @@ body {
   box-shadow: inset 2px 0 0 #ecfabd; }
 
 #person .dropbox-button {
-  background-image: url("/img/notactive/person.png");
+  background-image: url("../img/notactive/person.png");
   background-repeat: no-repeat;
   background-position: center; }
   #person .dropbox-button:hover, #person .dropbox-button:focus, #person .dropbox-button.button-active {
-    background-image: url("/img/active/person.png");
+    background-image: url("../img/active/person.png");
     background-repeat: no-repeat;
     background-position: center; }
 
 #ship .dropbox-button {
-  background-image: url("/img/notactive/ship.png");
+  background-image: url("../img/notactive/ship.png");
   background-repeat: no-repeat;
   background-position: center; }
   #ship .dropbox-button:hover, #ship .dropbox-button:focus, #ship .dropbox-button.button-active {
-    background-image: url("/img/active/ship.png");
+    background-image: url("../img/active/ship.png");
     background-repeat: no-repeat;
     background-position: center; }
 
 #list .dropbox-button {
   margin-right: 40px;
-  background-image: url("/img/notactive/list.png");
+  background-image: url("../img/notactive/list.png");
   background-repeat: no-repeat;
   background-position: center; }
   #list .dropbox-button p {
     bottom: 11px;
     left: 10px; }
   #list .dropbox-button:hover, #list .dropbox-button:focus, #list .dropbox-button.button-active {
-    background-image: url("/img/active/list.png");
+    background-image: url("../img/active/list.png");
     background-repeat: no-repeat;
     background-position: center; }
 
@@ -475,19 +475,19 @@ body {
   width: 260px; }
 
 #user .dropbox .dropbox-button {
-  background-image: url("/img/notactive/open.png");
+  background-image: url("../img/notactive/open.png");
   background-repeat: no-repeat;
   background-position: center; }
   #user .dropbox .dropbox-button:hover, #user .dropbox .dropbox-button:focus {
-    background-image: url("/img/active/open.png");
+    background-image: url("../img/active/open.png");
     background-repeat: no-repeat;
     background-position: center; }
   #user .dropbox .dropbox-button.button-active {
-    background-image: url("/img/notactive/hide.png");
+    background-image: url("../img/notactive/hide.png");
     background-repeat: no-repeat;
     background-position: center; }
     #user .dropbox .dropbox-button.button-active:hover, #user .dropbox .dropbox-button.button-active:focus {
-      background-image: url("/img/active/hide.png");
+      background-image: url("../img/active/hide.png");
       background-repeat: no-repeat;
       background-position: center; }
 
@@ -534,52 +534,52 @@ body {
     background-color: #2a2230;
     box-shadow: inset 2px 0 0 #ecfabd; }
   #sidebar #dashboard {
-    background-image: url("/img/active/dashboard.png");
+    background-image: url("../img/active/dashboard.png");
     background-repeat: no-repeat;
     background-position: center; }
   #sidebar #planet {
-    background-image: url("/img/notactive/planet.png");
+    background-image: url("../img/notactive/planet.png");
     background-repeat: no-repeat;
     background-position: center; }
     #sidebar #planet:hover, #sidebar #planet:focus {
-      background-image: url("/img/active/planet.png");
+      background-image: url("../img/active/planet.png");
       background-repeat: no-repeat;
       background-position: center; }
   #sidebar #ship {
-    background-image: url("/img/notactive/ship.png");
+    background-image: url("../img/notactive/ship.png");
     background-repeat: no-repeat;
     background-position: center; }
     #sidebar #ship:hover, #sidebar #ship:focus {
-      background-image: url("/img/active/ship.png");
+      background-image: url("../img/active/ship.png");
       background-repeat: no-repeat;
       background-position: center; }
   #sidebar #message {
-    background-image: url("/img/notactive/message.png");
+    background-image: url("../img/notactive/message.png");
     background-repeat: no-repeat;
     background-position: center; }
     #sidebar #message:hover, #sidebar #message:focus {
-      background-image: url("/img/active/message.png");
+      background-image: url("../img/active/message.png");
       background-repeat: no-repeat;
       background-position: center; }
   #sidebar #profile {
-    background-image: url("/img/notactive/profile.png");
+    background-image: url("../img/notactive/profile.png");
     background-repeat: no-repeat;
     background-position: center; }
     #sidebar #profile:hover, #sidebar #profile:focus {
-      background-image: url("/img/active/profile.png");
+      background-image: url("../img/active/profile.png");
       background-repeat: no-repeat;
       background-position: center; }
   #sidebar #setting {
-    background-image: url("/img/notactive/setting.png");
+    background-image: url("../img/notactive/setting.png");
     background-repeat: no-repeat;
     background-position: center; }
     #sidebar #setting:hover, #sidebar #setting:focus {
-      background-image: url("/img/active/setting.png");
+      background-image: url("../img/active/setting.png");
       background-repeat: no-repeat;
       background-position: center; }
 
 #content {
-  background-image: url("/img/bg.png");
+  background-image: url("../img/bg.png");
   height: auto; }
   #content #content-header {
     margin: 30px 30px 32px; }
@@ -651,7 +651,7 @@ body {
 #breadcrumb li + li:before {
   padding: 15px;
   content: "";
-  background: url("/img/breadcrumb.png") no-repeat center center; }
+  background: url("../img/breadcrumb.png") no-repeat center center; }
 
 #breadcrumb a {
   font-size: 12px;
@@ -799,7 +799,7 @@ body {
         left: 50%;
         width: 13px;
         height: 13px;
-        background: url(/img/checkbox.png) no-repeat center center;
+        background: url(../img/checkbox.png) no-repeat center center;
         transform: translate(-50%, -50%);
         visibility: visible; }
       #selectors div label input[type="checkbox"]:focus::after {
@@ -944,11 +944,11 @@ body {
   #doublebuttons .doublebutton .setting-button2 {
     width: 40px;
     height: 40px;
-    background-image: url("/img/notactive/setting.png");
+    background-image: url("../img/notactive/setting.png");
     background-repeat: no-repeat;
     background-position: center; }
   #doublebuttons .doublebutton .setting-button1:hover, #doublebuttons .doublebutton .setting-button1:focus {
-    background-image: url("/img/active/setting.png"); }
+    background-image: url("../img/active/setting.png"); }
 
 .select {
   position: relative;
@@ -1023,11 +1023,11 @@ body {
     .dropdown .select-list ul li:last-child {
       border-bottom: none; }
   .dropdown .select-list ul::-webkit-scrollbar {
-    background: #21202e url("/img/scrollbar.png") no-repeat center;
+    background: #21202e url("../img/scrollbar.png") no-repeat center;
     border-left: 1px solid #2d3c41;
     border-right: 1px solid #2d3c41; }
   .dropdown .select-list ul::-webkit-scrollbar-thumb {
-    background: #21202e url("/img/scrollbar-thumb.png") repeat-y center;
+    background: #21202e url("../img/scrollbar-thumb.png") repeat-y center;
     background-origin: content-box;
     padding: 1px;
     border-right: 1px solid #2d3c41;
@@ -1138,19 +1138,19 @@ body {
   .dropbox button {
     width: 30px;
     height: 30px;
-    background-image: url("/img/notactive/down2.png");
+    background-image: url("../img/notactive/down2.png");
     background-repeat: no-repeat;
     background-position: center; }
     .dropbox button:hover, .dropbox button:focus {
-      background-image: url("/img/active/down2.png");
+      background-image: url("../img/active/down2.png");
       background-repeat: no-repeat;
       background-position: center; }
     .dropbox button.button-active {
-      background-image: url("/img/notactive/up2.png");
+      background-image: url("../img/notactive/up2.png");
       background-repeat: no-repeat;
       background-position: center; }
       .dropbox button.button-active:hover, .dropbox button.button-active:focus {
-        background-image: url("/img/active/up2.png");
+        background-image: url("../img/active/up2.png");
         background-repeat: no-repeat;
         background-position: center; }
   .dropbox .dropbox-list {
@@ -1196,14 +1196,14 @@ body {
     content: "";
     width: 37px;
     height: 19px;
-    background: url(/img/notactive/selector-bg.png);
+    background: url(../img/notactive/selector-bg.png);
     position: absolute;
     transition-duration: 300ms; }
   .switch-for-1::before {
     content: "";
     width: 15px;
     height: 15px;
-    background: url(/img/notactive/selector.png);
+    background: url(../img/notactive/selector.png);
     border-radius: 50%;
     position: absolute;
     top: 2px;
@@ -1212,10 +1212,10 @@ body {
 
 .switch-1:checked + .switch-for-1::before {
   left: 20px;
-  background: url(/img/active/selector.png); }
+  background: url(../img/active/selector.png); }
 
 .switch-1:checked + .switch-for-1::after {
-  background: url(/img/active/selector-bg.png); }
+  background: url(../img/active/selector-bg.png); }
 
 .switch-2 {
   display: none; }
@@ -1306,4 +1306,4 @@ body {
   font-size: 12px;
   font-weight: 100;
   color: #5d858d;
-  background-image: url(/img/bg.png); }
+  background-image: url(../img/bg.png); }

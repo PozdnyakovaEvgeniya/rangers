@@ -78,7 +78,7 @@
     .setting-button2 {
       width: 40px;
       height: 40px;
-      background-image: url("/img/notactive/setting.png");
+      background-image: url("../img/notactive/setting.png");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -86,7 +86,7 @@
     .setting-button1 {
       &:hover,
       &:focus {
-        background-image: url("/img/active/setting.png");
+        background-image: url("../img/active/setting.png");
       }
     }
   }

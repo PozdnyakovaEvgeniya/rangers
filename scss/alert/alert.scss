@@ -19,12 +19,12 @@
   button {
     width: 15px;
     height: 15px;
-    background-image: url(/img/notactive/close.png);
+    background-image: url(../img/notactive/close.png);
     background-repeat: no-repeat;
     background-position: center;
 
     &:focus {
-      background-image: url(/img/active/close.png);
+      background-image: url(../img/active/close.png);
       background-repeat: no-repeat;
       background-position: center;
     }

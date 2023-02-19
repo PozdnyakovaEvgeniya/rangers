@@ -21,20 +21,20 @@
     }
 
     #burger {
-      @include buttons-background("/img/notactive/burger.png");
+      @include buttons-background("../img/notactive/burger.png");
 
       &:hover,
       &:focus {
-        @include buttons-background("/img/active/burger.png");
+        @include buttons-background("../img/active/burger.png");
       }
     }
 
     #attention {
-      @include buttons-background("/img/notactive/attention.png");
+      @include buttons-background("../img/notactive/attention.png");
 
       &:hover,
       &:focus {
-        @include buttons-background("/img/active/attention.png");
+        @include buttons-background("../img/active/attention.png");
       }
     }
 
@@ -66,7 +66,7 @@
           width: 30px;
           height: 30px;
           border-right: 1px solid $headerBackground;
-          @include buttons-background("/img/notactive/pen.png");
+          @include buttons-background("../img/notactive/pen.png");
         }
 
         &:hover,
@@ -74,7 +74,7 @@
           color: #ffffff;
 
           div {
-            @include buttons-background("/img/active/pen.png");
+            @include buttons-background("../img/active/pen.png");
           }
         }
       }
@@ -127,10 +127,10 @@
         button {
           width: 30px;
           height: 30px;
-          @include buttons-background("/img/notactive/search.png");
+          @include buttons-background("../img/notactive/search.png");
 
           &:focus {
-            @include buttons-background("/img/active/search.png");
+            @include buttons-background("../img/active/search.png");
           }
         }
       }

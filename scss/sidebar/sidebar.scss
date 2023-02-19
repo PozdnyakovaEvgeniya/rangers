@@ -20,51 +20,51 @@
   }
 
   #dashboard {
-    @include buttons-background("/img/active/dashboard.png");
+    @include buttons-background("../img/active/dashboard.png");
   }
 
   #planet {
-    @include buttons-background("/img/notactive/planet.png");
+    @include buttons-background("../img/notactive/planet.png");
 
     &:hover,
     &:focus {
-      @include buttons-background("/img/active/planet.png");
+      @include buttons-background("../img/active/planet.png");
     }
   }
 
   #ship {
-    @include buttons-background("/img/notactive/ship.png");
+    @include buttons-background("../img/notactive/ship.png");
 
     &:hover,
     &:focus {
-      @include buttons-background("/img/active/ship.png");
+      @include buttons-background("../img/active/ship.png");
     }
   }
 
   #message {
-    @include buttons-background("/img/notactive/message.png");
+    @include buttons-background("../img/notactive/message.png");
 
     &:hover,
     &:focus {
-      @include buttons-background("/img/active/message.png");
+      @include buttons-background("../img/active/message.png");
     }
   }
 
   #profile {
-    @include buttons-background("/img/notactive/profile.png");
+    @include buttons-background("../img/notactive/profile.png");
 
     &:hover,
     &:focus {
-      @include buttons-background("/img/active/profile.png");
+      @include buttons-background("../img/active/profile.png");
     }
   }
 
   #setting {
-    @include buttons-background("/img/notactive/setting.png");
+    @include buttons-background("../img/notactive/setting.png");
 
     &:hover,
     &:focus {
-      @include buttons-background("/img/active/setting.png");
+      @include buttons-background("../img/active/setting.png");
     }
   }
 }

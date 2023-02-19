@@ -103,13 +103,13 @@
     }
 
     ul::-webkit-scrollbar {
-      background: $bgBackground url("/img/scrollbar.png") no-repeat center;
+      background: $bgBackground url("../img/scrollbar.png") no-repeat center;
       border-left: 1px solid $inputBorderColor1;
       border-right: 1px solid $inputBorderColor1;
     }
 
     ul::-webkit-scrollbar-thumb {
-      background: $bgBackground url("/img/scrollbar-thumb.png") repeat-y center;
+      background: $bgBackground url("../img/scrollbar-thumb.png") repeat-y center;
       background-origin: content-box;
       padding: 1px;
       border-right: 1px solid $inputBorderColor1;
@@ -241,19 +241,19 @@
   button {
     width: 30px;
     height: 30px;
-    @include buttons-background("/img/notactive/down2.png");
+    @include buttons-background("../img/notactive/down2.png");
 
     &:hover,
     &:focus {
-      @include buttons-background("/img/active/down2.png");
+      @include buttons-background("../img/active/down2.png");
     }
 
     &.button-active {
-      @include buttons-background("/img/notactive/up2.png");
+      @include buttons-background("../img/notactive/up2.png");
 
       &:hover,
       &:focus {
-        @include buttons-background("/img/active/up2.png");
+        @include buttons-background("../img/active/up2.png");
       }
     }
   }

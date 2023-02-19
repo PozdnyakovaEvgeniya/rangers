@@ -10,7 +10,7 @@
     content: "";
     width: 37px;
     height: 19px;
-    background: url(/img/notactive/selector-bg.png);
+    background: url(../img/notactive/selector-bg.png);
     position: absolute;
     transition-duration: 300ms;
   }
@@ -19,7 +19,7 @@
     content: "";
     width: 15px;
     height: 15px;
-    background: url(/img/notactive/selector.png);
+    background: url(../img/notactive/selector.png);
     border-radius: 50%;
     position: absolute;
     top: 2px;
@@ -30,11 +30,11 @@
 
 .switch-1:checked + .switch-for-1::before {
   left: 20px;
-  background: url(/img/active/selector.png);
+  background: url(../img/active/selector.png);
 }
 
 .switch-1:checked + .switch-for-1::after {
-  background: url(/img/active/selector-bg.png);
+  background: url(../img/active/selector-bg.png);
 }
 
 .switch-2 {

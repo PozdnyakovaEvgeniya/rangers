@@ -46,24 +46,24 @@
 
 #person {
   .dropbox-button {
-    @include buttons-background("/img/notactive/person.png");
+    @include buttons-background("../img/notactive/person.png");
 
     &:hover,
     &:focus,
     &.button-active {
-      @include buttons-background("/img/active/person.png");
+      @include buttons-background("../img/active/person.png");
     }
   }
 }
 
 #ship {
   .dropbox-button {
-    @include buttons-background("/img/notactive/ship.png");
+    @include buttons-background("../img/notactive/ship.png");
 
     &:hover,
     &:focus,
     &.button-active {
-      @include buttons-background("/img/active/ship.png");
+      @include buttons-background("../img/active/ship.png");
     }
   }
 }
@@ -71,7 +71,7 @@
 #list {
   .dropbox-button {
     margin-right: 40px;
-    @include buttons-background("/img/notactive/list.png");
+    @include buttons-background("../img/notactive/list.png");
 
     p {
       @extend .numbers1;
@@ -82,7 +82,7 @@
     &:hover,
     &:focus,
     &.button-active {
-      @include buttons-background("/img/active/list.png");
+      @include buttons-background("../img/active/list.png");
     }
   }
 
@@ -135,18 +135,18 @@
 
 #user .dropbox {
   .dropbox-button {
-    @include buttons-background("/img/notactive/open.png");
+    @include buttons-background("../img/notactive/open.png");
 
     &:hover,
     &:focus {
-      @include buttons-background("/img/active/open.png");
+      @include buttons-background("../img/active/open.png");
     }
 
     &.button-active {
-      @include buttons-background("/img/notactive/hide.png");
+      @include buttons-background("../img/notactive/hide.png");
       &:hover,
       &:focus {
-        @include buttons-background("/img/active/hide.png");
+        @include buttons-background("../img/active/hide.png");
       }
     }
   }
