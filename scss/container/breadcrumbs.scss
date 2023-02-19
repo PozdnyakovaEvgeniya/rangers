@@ -1,0 +1,24 @@
+#breadcrumb {
+  li {
+    display: inline;
+
+    a:hover,
+    a:focus {
+      color: #ffffff;
+    }
+  }
+
+  li + li:before {
+    padding: 15px;
+    content: "";
+    background: url("/img/breadcrumb.png") no-repeat center center;
+  }
+
+  a {
+    @include fonts(12px, 100, $textColor1);
+  }
+
+  .active-breadcrumbs {
+    @include fonts(12px, 100, $textColor2);
+  }
+}

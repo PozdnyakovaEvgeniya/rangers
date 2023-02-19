@@ -1,0 +1,48 @@
+@mixin fonts($fontSize, $fontWeight, $color) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+}
+
+@mixin positions($justify, $align) {
+  display: grid;
+  justify-content: $justify;
+  align-content: $align;
+}
+
+@mixin buttonstyle1($gradient1, $gradient2, $font-color) {
+  background: linear-gradient(60deg, $gradient1, $gradient2);
+  font-family: $myFontFamily;
+  color: $font-color;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+}
+
+@mixin buttonstyle2($border-color, $font-color) {
+  background: none;
+  font-family: $myFontFamily;
+  border: 1px solid $border-color;
+  color: $font-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 10px $border-color;
+  }
+}
+
+@mixin size($width, $height, $font-size) {
+  width: $width;
+  height: $height;
+  font-weight: 100;
+  font-size: $font-size;
+}
+
+@mixin buttons-background($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+}

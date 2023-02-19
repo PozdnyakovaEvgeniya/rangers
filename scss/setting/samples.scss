@@ -1,0 +1,86 @@
+.numbers1 {
+  @include positions(center, center);
+  @include fonts(10px, 200, $activeColor1);
+  position: relative;
+  border: 1px solid $borderColor;
+  width: 14px;
+  height: 14px;
+  background: $numberBackground;
+}
+
+.numbers2 {
+  @include positions(center, center);
+  @include fonts(14px, 200, $activeColor1);
+  position: relative;
+  border: 1px solid $borderColor;
+  width: 18px;
+  height: 18px;
+  background: $numberBackground;
+}
+
+.width {
+  width: 100%;
+  max-width: $maxWidth;
+  min-width: $minWidth;
+}
+
+.avatar {
+  border: 1px solid $inputBorderColor1;
+  @include positions(center, center);
+}
+
+.button {
+  width: 60px;
+  height: 50px;
+  @include positions(center, center);
+  background: none;
+}
+
+.content-zone {
+  margin: 0 30px;
+  border: 1px solid $contentBorderColor;
+  border-bottom: none;
+}
+
+.size1 {
+  @include size(200px, 50px, 14px);
+}
+
+.size2 {
+  @include size(180px, 40px, 12px);
+}
+
+.size3 {
+  @include size(120px, 30px, 12px);
+}
+
+.size4 {
+  @include size(80px, 20px, 10px);
+}
+
+.size5 {
+  width: 180px;
+  height: 40px;
+}
+
+.perсent {
+  width: 32px;
+  height: 20px;
+  border: 1px solid $inputBorderColor1;
+  @include positions(center, center);
+}
+
+.previous {
+  img {
+    transform: rotate(90deg);
+  }
+}
+
+.next {
+  width: 43px;
+  height: 50px;
+
+  img {
+    transform: rotate(-90deg);
+  }
+}

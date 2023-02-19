@@ -1,0 +1,304 @@
+.select {
+  position: relative;
+  z-index: 2;
+
+  button,
+  .select-search {
+    @include positions(space-between, center);
+    align-items: center;
+    grid-template-columns: auto auto;
+  }
+
+  .select-list {
+    display: none;
+    position: absolute;
+  }
+
+  .select-list-active {
+    display: block;
+  }
+
+  &.up {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .select-list-active {
+      bottom: 30px;
+
+      .select-list-item,
+      .select-search {
+        border-top: 1px solid $inputBorderColor1;
+      }
+
+      ul,
+      li {
+        border-bottom: none;
+      }
+
+      li:first-child {
+        border-top: none;
+      }
+    }
+  }
+}
+
+.dropdown {
+  .select-list {
+    background: $bgBackground;
+  }
+
+  button,
+  .select-list-item {
+    width: 270px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid $inputBorderColor1;
+    @include fonts(14px, 100, $textColor2);
+    cursor: pointer;
+  }
+
+  button {
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 10px $inputBorderColor1;
+    }
+  }
+
+  .select-list {
+    width: 270px;
+
+    .select-search {
+      height: 30px;
+      border: 1px solid $inputBorderColor1;
+      border-top: none;
+
+      input {
+        @include fonts(14px, 100, $textColor2);
+      }
+
+      input::placeholder {
+        @include fonts(14px, 100, $textColor3);
+      }
+
+      button {
+        width: auto;
+        border: none;
+      }
+    }
+
+    ul {
+      max-height: 151px;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      border-bottom: 1px solid $inputBorderColor1;
+
+      li {
+        border-top: none;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+
+    ul::-webkit-scrollbar {
+      background: $bgBackground url("/img/scrollbar.png") no-repeat center;
+      border-left: 1px solid $inputBorderColor1;
+      border-right: 1px solid $inputBorderColor1;
+    }
+
+    ul::-webkit-scrollbar-thumb {
+      background: $bgBackground url("/img/scrollbar-thumb.png") repeat-y center;
+      background-origin: content-box;
+      padding: 1px;
+      border-right: 1px solid $inputBorderColor1;
+      border-left: 1px solid $inputBorderColor1;
+    }
+
+    .select-list-item {
+      box-shadow: inset 0 0 135px rgba(84, 186, 201, 0.04);
+    }
+
+    .select-list-item:hover {
+      box-shadow: inset 0 0 135px rgba(84, 186, 201, 0.1);
+    }
+  }
+}
+
+.numbers {
+  button,
+  .select-list-item,
+  .select-list {
+    width: 70px;
+  }
+
+  &.up ul {
+    border-top: 1px solid $inputBorderColor1;
+  }
+}
+
+.calendar {
+  button,
+  .select-list-item,
+  .select-list {
+    width: 301px;
+  }
+
+  .date {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    .previous {
+      width: 43px;
+      height: 50px;
+    }
+
+    .month-year {
+      @include fonts(12px, 100, $textColor1);
+      width: 215px;
+      height: 50px;
+
+      input {
+        @include fonts(12px, 100, #ffffff);
+      }
+    }
+
+    .next {
+      width: 43px;
+      height: 50px;
+    }
+
+    .next,
+    .previous {
+      @include positions(center, center);
+    }
+  }
+
+  .days-of-week {
+    display: grid;
+    grid-template-columns: 43px 43px 43px 43px 43px 43px 43px;
+
+    div {
+      @include fonts(12px, 100, #ecfabd);
+      width: 43px;
+      height: 40px;
+      border: 1px solid $inputBorderColor1;
+      @include positions(center, center);
+    }
+  }
+
+  &.up .select-list {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &.up ul,
+  &:not(.up) ul {
+    max-height: none;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 43px 43px 43px 43px 43px 43px 43px;
+
+    li {
+      width: 43px;
+      height: 40px;
+      border: 1px solid $inputBorderColor1;
+      @include positions(center, center);
+      @include fonts(12px, 100, $textColor2);
+
+      &.select-list-item {
+        box-shadow: none;
+        color: #ffffff;
+
+        &.li-active {
+          color: $textColor1;
+          box-shadow: inset 0 0 135px rgba(84, 186, 201, 0.4);
+        }
+
+        &.now {
+          position: relative;
+          color: $textColor1;
+          div {
+            position: absolute;
+            font-size: 20px;
+            top: 16px;
+            left: 14px;
+          }
+        }
+
+        &:hover,
+        &.li-active {
+          box-shadow: inset 0 0 135px rgba(84, 186, 201, 0.1);
+        }
+      }
+    }
+  }
+}
+
+.dropbox {
+  z-index: 2;
+  button {
+    width: 30px;
+    height: 30px;
+    @include buttons-background("/img/notactive/down2.png");
+
+    &:hover,
+    &:focus {
+      @include buttons-background("/img/active/down2.png");
+    }
+
+    &.button-active {
+      @include buttons-background("/img/notactive/up2.png");
+
+      &:hover,
+      &:focus {
+        @include buttons-background("/img/active/up2.png");
+      }
+    }
+  }
+
+  .dropbox-list {
+    position: absolute;
+    top: 30px;
+    left: -150px;
+    width: 180px;
+    background: linear-gradient(0deg, $sidebarGradient1, $sidebarGradient2);
+
+    .dropbox-list-items {
+      border: 1px solid $inputBorderColor1;
+      border-top: none;
+      padding: 10px;
+      @include positions(flex-start, center);
+
+      &:first-child {
+        border-top: 1px solid $inputBorderColor1;
+      }
+    }
+
+    .dropbox-list-items:hover {
+      background-color: $activeColor2;
+      box-shadow: inset 2px 0 0 $activeColor1;
+    }
+
+    .dropbox-list-items a {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
+      align-items: center;
+      @include fonts(14px, 100, $textColor1);
+      cursor: pointer;
+    }
+  }
+
+  &.up {
+    .dropbox-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .select-list-active {
+        bottom: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.switch-1 {
+  display: none;
+}
+
+.switch-for-1 {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 37px;
+    height: 19px;
+    background: url(/img/notactive/selector-bg.png);
+    position: absolute;
+    transition-duration: 300ms;
+  }
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(/img/notactive/selector.png);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition-duration: 300ms;
+  }
+}
+
+.switch-1:checked + .switch-for-1::before {
+  left: 20px;
+  background: url(/img/active/selector.png);
+}
+
+.switch-1:checked + .switch-for-1::after {
+  background: url(/img/active/selector-bg.png);
+}
+
+.switch-2 {
+  display: none;
+}
+
+.switch-for-2 {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    border-radius: 15px;
+    background: $inputBorderColor1;
+    position: absolute;
+    transition-duration: 300ms;
+  }
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: $color3;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 1;
+    transition-duration: 300ms;
+  }
+}
+
+.switch-2:checked + .switch-for-2::before {
+  left: 11px;
+  background: $textColor1;
+}

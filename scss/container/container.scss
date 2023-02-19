@@ -1,0 +1,19 @@
+#container {
+  display: grid;
+  grid-template-areas: "sidebar content" "sidebar footer";
+
+  #sidebar {
+    grid-area: sidebar;
+    width: 60px;
+  }
+
+  #content {
+    grid-area: content;
+    width: auto;
+  }
+
+  #footer {
+    grid-area: footer;
+    width: auto;
+  }
+}

@@ -1,0 +1,8 @@
+body {
+  @include positions(center, flex-start);
+  background: $bgBackground;
+}
+
+* {
+  font-family: $myFontFamily;
+}

@@ -1,0 +1,40 @@
+.choiсe {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  a {
+    @include positions(center, center);
+    border: 1px solid $textColor2;
+    @include fonts(12px, 100, $textColor1);
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 135px rgba(84, 186, 201, 0.1);
+    }
+
+    &.active {
+      box-shadow: inset 0 0 135px rgba(84, 186, 201, 0.15);
+    }
+  }
+
+  &.small {
+    width: 150px;
+    a {
+      height: 30px;
+    }
+  }
+
+  &.medium {
+    width: 210px;
+    a {
+      height: 40px;
+    }
+  }
+
+  &.large {
+    width: 270px;
+    a {
+      height: 50px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+#sidebar {
+  width: 60px;
+  height: 100%;
+  background: linear-gradient(180deg, $sidebarGradient1, $sidebarGradient2);
+
+  .avatar {
+    width: 40px;
+    height: 50px;
+    margin: 20px auto 36px;
+  }
+
+  a,
+  #dashboard {
+    @extend .button;
+
+    &.active {
+      background-color: $activeColor2;
+      box-shadow: inset 2px 0 0 $activeColor1;
+    }
+  }
+
+  #dashboard {
+    @include buttons-background("/img/active/dashboard.png");
+  }
+
+  #planet {
+    @include buttons-background("/img/notactive/planet.png");
+
+    &:hover,
+    &:focus {
+      @include buttons-background("/img/active/planet.png");
+    }
+  }
+
+  #ship {
+    @include buttons-background("/img/notactive/ship.png");
+
+    &:hover,
+    &:focus {
+      @include buttons-background("/img/active/ship.png");
+    }
+  }
+
+  #message {
+    @include buttons-background("/img/notactive/message.png");
+
+    &:hover,
+    &:focus {
+      @include buttons-background("/img/active/message.png");
+    }
+  }
+
+  #profile {
+    @include buttons-background("/img/notactive/profile.png");
+
+    &:hover,
+    &:focus {
+      @include buttons-background("/img/active/profile.png");
+    }
+  }
+
+  #setting {
+    @include buttons-background("/img/notactive/setting.png");
+
+    &:hover,
+    &:focus {
+      @include buttons-background("/img/active/setting.png");
+    }
+  }
+}

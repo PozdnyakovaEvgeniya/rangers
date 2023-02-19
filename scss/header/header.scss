@@ -1,0 +1,157 @@
+#header {
+  background: $headerBackground;
+  @extend .width;
+  @include positions(center, center);
+  grid-template-columns: 1fr 1fr;
+  height: 50px;
+
+  button {
+    width: 50px;
+    height: 50px;
+  }
+
+  #left {
+    @include positions(flex-start, center);
+    grid-template-columns: auto auto auto auto auto;
+
+    #logo {
+      width: 145px;
+      height: 50px;
+      @include positions(center, center);
+    }
+
+    #burger {
+      @include buttons-background("/img/notactive/burger.png");
+
+      &:hover,
+      &:focus {
+        @include buttons-background("/img/active/burger.png");
+      }
+    }
+
+    #attention {
+      @include buttons-background("/img/notactive/attention.png");
+
+      &:hover,
+      &:focus {
+        @include buttons-background("/img/active/attention.png");
+      }
+    }
+
+    #attention p {
+      @extend .numbers1;
+      bottom: 8px;
+      left: 31px;
+    }
+
+    #create {
+      width: 130px;
+      @include positions(center, center);
+
+      a {
+        background: linear-gradient(
+          60deg,
+          $onlineGradient1,
+          $inputBorderColor1
+        );
+        width: 100px;
+        height: 30px;
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+        align-items: center;
+        justify-items: center;
+        @include fonts(12px, 100, $textColor1);
+
+        div {
+          width: 30px;
+          height: 30px;
+          border-right: 1px solid $headerBackground;
+          @include buttons-background("/img/notactive/pen.png");
+        }
+
+        &:hover,
+        &:focus {
+          color: #ffffff;
+
+          div {
+            @include buttons-background("/img/active/pen.png");
+          }
+        }
+      }
+    }
+
+    #online {
+      width: auto;
+      @include positions(center, center);
+
+      p {
+        background: $onlineBackground;
+        width: 59px;
+        height: 18px;
+        @include fonts(12px, 200, $textColor1);
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      }
+    }
+  }
+
+  #right {
+    @include positions(flex-end, center);
+    grid-template-columns: auto auto auto auto auto;
+
+    #search {
+      width: 160px;
+      height: 50px;
+      @include positions(center, center);
+
+      div {
+        height: 30px;
+        border: 1px solid $inputBorderColor1;
+        background: none;
+        @include positions(center, center);
+        grid-template-columns: auto auto;
+
+        input {
+          display: grid;
+          width: 108px;
+          border: none;
+          background: none;
+          @include fonts(12px, 200, $textColor1);
+
+          &::placeholder {
+            @include fonts(12px, 100, $textColor2);
+          }
+        }
+
+        button {
+          width: 30px;
+          height: 30px;
+          @include buttons-background("/img/notactive/search.png");
+
+          &:focus {
+            @include buttons-background("/img/active/search.png");
+          }
+        }
+      }
+    }
+
+    #user {
+      height: 50px;
+      @include positions(flex-end, center);
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      @include fonts(14px, 100, #fff);
+
+      div.avatar {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+
+      span:not(.dropbox-wrapper) {
+        margin-right: 47px;
+      }
+    }
+  }
+}

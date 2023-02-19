@@ -1,0 +1,168 @@
+.dropbox {
+  position: relative;
+
+  .dropbox-list {
+    display: none;
+    position: absolute;
+  }
+
+  .dropbox-list-active {
+    display: block;
+  }
+}
+
+#person,
+#ship,
+#list {
+  .dropbox-button {
+    @extend .button;
+    width: 50px;
+
+    &.button-active {
+      border-right: 1px solid $color15;
+      border-left: 1px solid $color15;
+      background: $bgBackground;
+    }
+  }
+
+  .dropbox-list {
+    top: 50px;
+    left: -250px;
+    width: 300px;
+    background: $bgBackground;
+
+    li {
+      border: 1px solid $color15;
+      border-top: none;
+      padding: 20px;
+    }
+  }
+
+  .dropbox-list-items:hover {
+    background-color: $activeColor2;
+    box-shadow: inset 2px 0 0 $activeColor1;
+  }
+}
+
+#person {
+  .dropbox-button {
+    @include buttons-background("/img/notactive/person.png");
+
+    &:hover,
+    &:focus,
+    &.button-active {
+      @include buttons-background("/img/active/person.png");
+    }
+  }
+}
+
+#ship {
+  .dropbox-button {
+    @include buttons-background("/img/notactive/ship.png");
+
+    &:hover,
+    &:focus,
+    &.button-active {
+      @include buttons-background("/img/active/ship.png");
+    }
+  }
+}
+
+#list {
+  .dropbox-button {
+    margin-right: 40px;
+    @include buttons-background("/img/notactive/list.png");
+
+    p {
+      @extend .numbers1;
+      bottom: 11px;
+      left: 10px;
+    }
+
+    &:hover,
+    &:focus,
+    &.button-active {
+      @include buttons-background("/img/active/list.png");
+    }
+  }
+
+  .dropbox-list-items.offline a {
+    opacity: 0.3;
+  }
+
+  .dropbox-list-items a {
+    @include positions(flex-start, center);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+
+    .avatar {
+      border: 1px solid $color16;
+      background: $color17;
+    }
+
+    .about {
+      display: grid;
+      grid-template-areas:
+        "name time"
+        "text text";
+    }
+
+    .name {
+      grid-area: name;
+      @include fonts(14px, 100, #ffffff);
+    }
+
+    .time {
+      grid-area: time;
+      @include fonts(10px, 100, $textColor2);
+      justify-self: flex-end;
+    }
+
+    .text {
+      grid-area: text;
+      @include fonts(14px, 100, $textColor2);
+      align-self: flex-end;
+    }
+  }
+
+  button:not(.dropbox-button) {
+    @extend .button1;
+    @extend .size3;
+    width: 260px;
+  }
+}
+
+#user .dropbox {
+  .dropbox-button {
+    @include buttons-background("/img/notactive/open.png");
+
+    &:hover,
+    &:focus {
+      @include buttons-background("/img/active/open.png");
+    }
+
+    &.button-active {
+      @include buttons-background("/img/notactive/hide.png");
+      &:hover,
+      &:focus {
+        @include buttons-background("/img/active/hide.png");
+      }
+    }
+  }
+
+  .dropbox-list-name {
+    height: 30px;
+    @include fonts(12px, 100, $textColor2);
+    border: 1px solid $inputBorderColor1;
+    border-top: none;
+    padding: 10px;
+    @include positions(flex-start, center);
+  }
+
+  .dropbox-list {
+    top: 50px;
+    left: -189px;
+    width: 239px;
+  }
+}

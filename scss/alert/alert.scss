@@ -1,0 +1,32 @@
+#alert {
+  @include positions(center, center);
+  @include fonts(14px, 100, $textColor2);
+  @extend .width;
+  padding: 8/1600 * 100%;
+  height: 30px;
+  background: $alertBackground;
+  grid-template-columns: 90fr 1fr;
+  justify-items: center;
+
+  a {
+    color: $textColor1;
+
+    &:focus {
+      color: #ffffff;
+    }
+  }
+
+  button {
+    width: 15px;
+    height: 15px;
+    background-image: url(/img/notactive/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:focus {
+      background-image: url(/img/active/close.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

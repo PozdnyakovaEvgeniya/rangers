@@ -1,0 +1,51 @@
+.input1 {
+  border: 1px solid $inputBorderColor1;
+  background: none;
+  @include fonts(14px, 400, $textColor3);
+
+  &:focus {
+    outline: 1px solid $inputBorderColor1;
+    box-shadow: 0 0 5px $inputBorderColor1;
+  }
+
+  &::placeholder {
+    @include fonts(14px, 200, $textColor3);
+  }
+}
+
+.input2 {
+  border: 1px solid $textColor2;
+  background: none;
+  @include fonts(14px, 400, $textColor2);
+
+  &:focus {
+    outline: 1px solid $textColor2;
+    box-shadow: 0 0 5px $textColor2;
+  }
+
+  &::placeholder {
+    @include fonts(14px, 100, $textColor2);
+  }
+}
+
+.input3 {
+  border: 1px solid $onlineBackground;
+  background: rgba(32, 101, 93, 0.1);
+  @include fonts(14px, 400, $onlineBackground);
+
+  &:focus {
+    outline: 1px solid $onlineBackground;
+    box-shadow: 0 0 5px $onlineBackground;
+  }
+}
+
+.input4 {
+  border: 1px solid $inputBorderColor2;
+  background: rgba(160, 55, 29, 0.1);
+  @include fonts(14px, 400, $inputBorderColor2);
+
+  &:focus {
+    outline: 1px solid $inputBorderColor2;
+    box-shadow: 0 0 5px $inputBorderColor2;
+  }
+}

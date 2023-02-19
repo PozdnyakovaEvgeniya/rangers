@@ -1,0 +1,57 @@
+#colors {
+  grid-area: colors;
+  height: 100px;
+  display: grid;
+  grid-template-rows: 40px 40px;
+  align-content: space-between;
+
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    & > div {
+      width: 50px;
+      height: 41px;
+    }
+
+    .color1 {
+      background: $onlineBackground;
+    }
+
+    .color2 {
+      background: $color1;
+    }
+
+    .color3 {
+      background: $inputBorderColor2;
+    }
+
+    .color4 {
+      background: $alertBackground;
+    }
+
+    .color5 {
+      background: $inputBorderColor1;
+    }
+
+    .color6 {
+      background: $textColor1;
+    }
+
+    .color7 {
+      background: $textColor2;
+    }
+
+    .color8 {
+      background: $color2;
+    }
+
+    .color9 {
+      background: $activeColor1;
+    }
+
+    .color10 {
+      background: $color3;
+    }
+  }
+}

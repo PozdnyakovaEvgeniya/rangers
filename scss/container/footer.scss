@@ -1,0 +1,5 @@
+#footer {
+  padding: 20px 30px;
+  @include fonts(12px, 100, $textColor2);
+  background-image: url(/img/bg.png);
+}
